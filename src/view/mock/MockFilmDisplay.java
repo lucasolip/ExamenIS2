@@ -19,4 +19,14 @@ public class MockFilmDisplay implements FilmDisplay {
         }
     }
     
+    public void displayFilm(String title) {
+        for (Film film : films) {
+            if (film.getTitle().equals(title)) {
+                System.out.println(film);
+                return;
+            }
+        }
+        System.out.println("Esa película no existe");
+    }
+    
 }

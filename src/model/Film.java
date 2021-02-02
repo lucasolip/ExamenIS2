@@ -59,13 +59,13 @@ public class Film {
     
     @Override
     public String toString() {
-        return title + ", " + 
-                year + ", " + 
-                director + ", " + 
-                cast + ", " + 
-                genre + ", " + 
-                length + ", " + 
-                filmValoration.getRatings() + ", " + 
+        return title + ", year: " + 
+                year + ", director: " + 
+                director + ", cast: " + 
+                cast + ", genre: " + 
+                genre + ", length: " + 
+                length + ", ratings: " + 
+                filmValoration.getRatings() + ", views: " + 
                 filmValoration.getViews();
     }
     

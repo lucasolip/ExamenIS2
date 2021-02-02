@@ -3,6 +3,7 @@ package mockapp;
 import control.Command;
 import control.ExitCommand;
 import control.NullCommand;
+import control.SelectCommand;
 import control.SortByGenreCommand;
 import control.SortByNewCommand;
 import control.SortByRatingsCommand;
@@ -42,6 +43,7 @@ public class Main {
         commands.put("new", new SortByNewCommand(filmDisplay, films));
         commands.put("ratings", new SortByRatingsCommand(filmDisplay, films));
         commands.put("views", new SortByViewsCommand(filmDisplay, films));
+        commands.put("select", new SelectCommand(filmDisplay));
     }
     
     public void inputLoop() {
